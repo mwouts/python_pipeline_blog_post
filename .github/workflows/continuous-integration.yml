@@ -53,5 +53,5 @@ jobs:
         run: echo "TMPDIR=${TMPDIR}" >> $GITHUB_ENV
       - name: Test with pytest
         run: pytest sample_pipeline --cov=./ --cov-report=xml
-      - name: Upload coverage
+      - name: Upload coverage to codecov
         uses: codecov/codecov-action@v2
